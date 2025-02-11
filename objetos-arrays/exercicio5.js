@@ -1,29 +1,71 @@
 // // exercício 1, adicionar método de calculo de média. 
 // // depois mostrar com base na nota, o nivel de desempenho
+const pessoa = {
+    nome: 'Erik',
+    notas: [6, 8],
+    calcularMediaNotas: function () {
+        const media = (this.notas[0] + this.notas[1]) / 2
+        console.log(media);
+        return media;
+    },
+    classificarDesempenho: function () {
+        const mediaDesempenho = this.calcularMediaNotas();
+
+        if (mediaDesempenho >= 9) {
+            console.log("Desempenho excelente");
+        } else if (7.6 <= mediaDesempenho && mediaDesempenho <= 8.9) {
+            console.log("Bom Desempenho");
+        } else if (6 <= mediaDesempenho && mediaDesempenho <= 7.5) {
+            console.log("Desempenho regular");
+        } else if (mediaDesempenho < 6) {
+            console.log("Desempenho insuficiente");
+        }
+    }
+}
+
+pessoa.classificarDesempenho();
+
+
+// versão melhorada ao de cima. 
 // const pessoa = {
 //     nome: 'Erik',
 //     notas: [6, 8],
 //     calcularMediaNotas: function () {
-//         const media = (this.notas[0] + this.notas[1]) / 2
-//         console.log(media);
-//         return media;
+//         const somaNotas = this.notas.reduce((soma, notas) => soma + notas, 0)
+//         const media = somaNotas / this.notas.length;
+//         return media.toFixed(2);
 //     },
+
 //     classificarDesempenho: function () {
 //         const mediaDesempenho = this.calcularMediaNotas();
 
 //         if (mediaDesempenho >= 9) {
-//             console.log("Desempenho excelente");
+//             return "Desempenho excelente";
 //         } else if (7.6 <= mediaDesempenho && mediaDesempenho <= 8.9) {
-//             console.log("Bom Desempenho");
+//             return "Bom Desempenho";
 //         } else if (6 <= mediaDesempenho && mediaDesempenho <= 7.5) {
-//             console.log("Desempenho regular");
-//         } else if (mediaDesempenho < 6) {
-//             console.log("Desempenho insuficiente");
+//             return "Desempenho regular";
+//         } else {
+//             return "Desempenho insuficiente";
 //         }
 //     }
 // }
 
-// pessoa.classificarDesempenho();
+// const mediaCalculada = pessoa.calcularMediaNotas();
+// const classificaCalculada = pessoa.classificarDesempenho();
+// console.log(mediaCalculada);
+// console.log(classificaCalculada);
+
+
+
+
+
+
+
+
+
+
+
 
 
 // // exercício 2, criar um objeto carro com as propriedades. 
@@ -63,38 +105,3 @@
 //     },
     
 // }
-
-
-// exercício 1, adicionar método de calculo de média. 
-// depois mostrar com base na nota, o nivel de desempenho
-const pessoa = {
-    nome: 'Erik',
-    notas: [6, 8],
-    calcularMediaNotas: function () {
-        const somaNotas = this.notas.reduce((soma, notas) => soma + notas, 0)
-        const media = somaNotas / this.notas.length;
-        return media.toFixed(2);
-    },
-
-    classificarDesempenho: function () {
-        const mediaDesempenho = this.calcularMediaNotas();
-
-        if (mediaDesempenho >= 9) {
-            return "Desempenho excelente";
-        } else if (7.6 <= mediaDesempenho && mediaDesempenho <= 8.9) {
-            return "Bom Desempenho";
-        } else if (6 <= mediaDesempenho && mediaDesempenho <= 7.5) {
-            return "Desempenho regular";
-        } else {
-            return "Desempenho insuficiente";
-        }
-    }
-}
-
-pessoa.calcularMediaNotas();
-pessoa.classificarDesempenho();
-
-const mediaCalculada = pessoa.calcularMediaNotas();
-const classificaCalculada = pessoa.classificarDesempenho();
-console.log(mediaCalculada);
-console.log(classificaCalculada);
