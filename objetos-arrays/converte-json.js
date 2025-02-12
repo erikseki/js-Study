@@ -1,6 +1,6 @@
 // métodos transformando JSON > strings e convertendo de strings > objetos
 
-const estudante = require('./estudante.json');
+const estudante = require('./exercicios/estudante.json');
 
 // converte o json para string
 // manipulação de json backend com JSON.stringfy => biblioteca do node.
