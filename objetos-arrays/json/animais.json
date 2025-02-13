@@ -4,25 +4,19 @@
       "id": 1,
       "nome": "Leão",
       "tipo": "Mamífero",
-      "habitat": "Savana"
+      "habitat": "pântano"
     },
     {
       "id": 2,
       "nome": "Pinguim",
       "tipo": "Ave",
-      "habitat": "Pólo Sul"
+      "habitat": "pólo sul"
     },
     {
       "id": 3,
       "nome": "Cobra",
       "tipo": "Réptil",
-      "habitat": "Floresta Tropical"
-    },
-    {
-      "id": 4,
-      "nome": "Morcego",
-      "tipo": "nãosei",
-      "habitat": "nãosei"
+      "habitat": "floresta tropical"
     }
   ]
 }
