@@ -35,19 +35,16 @@ function encontrarLivroPorId(lista, id){
 
     const livrosEncontrados = lista.find(livros => livros.id === id);
 
-    if(!id === null){
-        console.log(`O livro é ${livrosEncontrados}`);
-        return
+    if(livrosEncontrados){
+        console.log(`O livro é: ${JSON.stringify(livrosEncontrados, null, 1)}`);
     } else {
-        livrosEncontrados = null;
         console.log(`não encontramos o seu pedido`);
-        return
-}
+    }
+    return
 }
 
 
 const filtroLivros = encontrarLivroPorId(biblioteca, 1);
-console.log(filtroLivros);
 
 // const LivrosNãoEncontrados = encontrarLivroPorId(biblioteca, 10);
 // console.log(LivrosNãoEncontrados);
