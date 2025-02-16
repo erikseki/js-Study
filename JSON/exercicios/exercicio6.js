@@ -17,7 +17,7 @@ const novoAnimal1 = {
 };
 
 // // exercicio 1 - ler arquivo json
-const dado = require('../json/animais.json')
+const dado = require('../_json/animais.json');
 console.log(dado);
 
 // const novaBiblioteca = JSON.stringify(dado);

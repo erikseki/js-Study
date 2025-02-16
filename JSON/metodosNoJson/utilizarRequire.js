@@ -1,4 +1,4 @@
-// const dados = require('./dados.json');
+// const dados = require('../_json/dados.json');
 
 // console.log(Object.keys(dados));
 
